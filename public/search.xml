@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>通过Analyzer进行分词</title>
+      <link href="/2019/10/09/%E9%80%9A%E8%BF%87Analyzer%E8%BF%9B%E8%A1%8C%E5%88%86%E8%AF%8D/"/>
+      <url>/2019/10/09/%E9%80%9A%E8%BF%87Analyzer%E8%BF%9B%E8%A1%8C%E5%88%86%E8%AF%8D/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> ElasticSearch </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ElasticSearch安装</title>
       <link href="/2019/10/08/ElasticSearch%E5%AE%89%E8%A3%85/"/>
       <url>/2019/10/08/ElasticSearch%E5%AE%89%E8%A3%85/</url>
