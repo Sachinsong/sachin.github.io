@@ -377,7 +377,26 @@
       
         
           
-            
+            <img style="width: 100%;height: 180px" src="/images/analysis-chain.png">
+
+<h3 id="什么是Analysis"><a href="#什么是Analysis" class="headerlink" title="什么是Analysis"></a>什么是Analysis</h3><ul>
+<li>Analysis也叫分词，就是将文本转换成一系列单词的过程;</li>
+<li>Analysis是通过Analyzer来实现的　(可使用Elasticsearch内置的分析器/或者按需定制化分析器).</li>
+</ul>
+<hr>
+<h3 id="Analyzer的组成"><a href="#Analyzer的组成" class="headerlink" title="Analyzer的组成"></a>Analyzer的组成</h3><p>分词器是专门处理分词的组件，Analyzer由三部分组成:</p>
+<ul>
+<li>Character Filters(针对原始文本处理，例如去除html);</li>
+<li>Tokenizer(按照规则切分为单词);</li>
+<li>Token Filter(将切分的单词进行加工，小写，删除stopwords,增加同义词).</li>
+</ul>
+<img style="width: 100%;" src="/images/analyzer.png">
+
+
+<hr>
+<h3 id="使用-analyzer-API"><a href="#使用-analyzer-API" class="headerlink" title="使用_analyzer API"></a>使用_analyzer API</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">GET _analyze</span><br><span class="line">&#123;</span><br><span class="line">	&quot;analyzer&quot;:&quot;standard&quot;,</span><br><span class="line">	&quot;text&quot;:&quot;Thanks for 丽丽 great job&quot;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
           
         
       
